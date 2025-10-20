@@ -1,0 +1,221 @@
+<!--
+File: index.html
+How to use:
+1) Create a repo named samirsharma77.github.io
+2) Add this index.html at the root
+3) (Optional) Add /assets folder for images and favicon
+4) Commit and push; site will be live at https://samirsharma77.github.io
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Samir Sharma — IT Director | ERP & SAP Project Leader</title>
+  <meta name="description" content="IT Director with 25+ years experience in ERP/SAP implementations, digital transformation, and IT leadership. PMP & SAP SD certified. Based in Indonesia." />
+  <meta name="author" content="Samir Sharma" />
+  <meta property="og:title" content="Samir Sharma — IT Director | ERP & SAP Project Leader" />
+  <meta property="og:description" content="ERP/SAP implementations, digital transformation, and IT leadership across Asia. PMP & SAP SD certified." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://samirsharma77.github.io" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0e14; --panel:#121826; --muted:#7a8799; --text:#e6edf7; --brand:#4fb3ff; --brand-2:#71f5a3; --line:#1f2a44;
+      --accent:#ffd166; --danger:#ff6b6b;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:var(--bg);color:var(--text)}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .nav .right{display:flex;gap:12px;align-items:center}
+    .btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:linear-gradient(180deg,#1a2336,#0f1523);color:var(--text);padding:10px 14px;border-radius:12px}
+    .btn:hover{border-color:#2e3e66}
+    header.hero{margin-top:24px;background:radial-gradient(1200px 400px at 20% 0%,rgba(79,179,255,.15),transparent),radial-gradient(900px 300px at 90% 10%,rgba(113,245,163,.12),transparent)}
+    .hero-card{display:grid;grid-template-columns:140px 1fr;gap:20px;background:var(--panel);border:1px solid var(--line);padding:22px;border-radius:18px;box-shadow:0 20px 40px rgba(0,0,0,.25)}
+    .avatar{width:140px;height:140px;border-radius:16px;background:#0d1322 url('assets/avatar.jpg') center/cover no-repeat;border:1px solid var(--line)}
+    h1{font-size:28px;line-height:1.2;margin:0 0 6px}
+    .subtitle{color:var(--muted);margin:0 0 8px}
+    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .chip{padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:#0e1526;color:#cfe1ff;font-size:12px}
+    section{margin-top:34px}
+    .section-title{display:flex;align-items:center;gap:10px;font-weight:700;margin:0 0 14px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{grid-column:span 12;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px}
+    @media(min-width:900px){.card.h6{grid-column:span 6}.card.h4{grid-column:span 4}.card.h8{grid-column:span 8}}
+    h3{margin:6px 0 10px;font-size:18px}
+    .muted{color:var(--muted)}
+    ul{margin:8px 0 0 18px}
+    .kpis{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px}
+    .kpi{background:#0d1629;border:1px solid var(--line);padding:12px 14px;border-radius:12px}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#0f1a31;border:1px solid var(--line);font-size:12px}
+    .timeline{position:relative;margin-left:8px}
+    .timeline::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--brand),var(--brand-2))}
+    .t-item{position:relative;padding-left:28px;margin:14px 0}
+    .t-item::before{content:"";position:absolute;left:1px;top:8px;width:16px;height:16px;border-radius:50%;background:var(--panel);border:2px solid var(--brand)}
+    footer{margin:40px 0 12px;color:var(--muted);text-align:center}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .mono{font-family:ui-monospace,Menlo,Monaco,Consolas,monospace}
+    .pill{display:inline-block;padding:6px 10px;border-radius:12px;background:#0d172b;border:1px solid var(--line);}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <div class="left" aria-label="Logo & Name">
+        <span class="pill">Samir Sharma</span>
+      </div>
+      <div class="right">
+        <a class="btn" href="#contact" aria-label="Jump to contact">Contact</a>
+        <a class="btn" href="https://github.com/samirsharma77" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://linkedin.com/in/samirsharma77" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-card">
+        <div class="avatar" role="img" aria-label="Profile Photo Placeholder"></div>
+        <div>
+          <h1>IT Director · ERP & SAP Project Leader · Digital Transformation Strategist</h1>
+          <p class="subtitle">PMP & SAP SD Certified · Based in Indonesia · 25+ years experience</p>
+          <div class="tags" aria-label="Expertise Tags">
+            <span class="chip">ERP/SAP (AFS, JBM, WFX, GEMSWEB)</span>
+            <span class="chip">Program/Project Governance</span>
+            <span class="chip">Process Re-engineering</span>
+            <span class="chip">RFID & Mobile Apps</span>
+            <span class="chip">Budgeting & Vendor Mgmt</span>
+          </div>
+          <div class="kpis">
+            <div class="kpi">Delivered a $2M ERP transformation on time & budget</div>
+            <div class="kpi">Reduced IT turnover to &lt;1% vs 15% company avg</div>
+            <div class="kpi">$10K+/mo savings via procurement consolidation</div>
+          </div>
+          <div class="cta">
+            <a class="btn" href="assets/SamirSharma_CV.pdf" download>Download CV</a>
+            <a class="btn" href="#projects">View Projects</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="projects">
+      <h2 class="section-title">Featured Work</h2>
+      <div class="grid">
+        <article class="card h6">
+          <h3>ERP JBM — Logistics & Maritime Suite</h3>
+          <p class="muted">Implemented for PT. MAP Trans Logistic, PT. Sea Cargo Indonesia, Dayaguna Maritim Cargotama, Asia Pacific Logistics, Frenz Maritime, and more.</p>
+          <ul>
+            <li>Multi-entity rollout with budgeting and P&amp;L control</li>
+            <li>Real-time customer inquiry handling across locations/countries</li>
+            <li>Governed architecture, integration, and program plan</li>
+          </ul>
+        </article>
+        <article class="card h6">
+          <h3>SAP AFS Implementation — Apparel Manufacturing</h3>
+          <p class="muted">PT. Honey Lady Intimates — large-scale SAP ECC 6.5 (AFS) rollout.</p>
+          <ul>
+            <li>Led blueprint, testing, cutover, and go-live support</li>
+            <li>Designed change management &amp; training structures</li>
+            <li>Improved inventory accuracy and reporting</li>
+          </ul>
+        </article>
+        <article class="card h4">
+          <h3>RFID Production Control (ASP.NET)</h3>
+          <ul>
+            <li>Real-time production monitoring and bottleneck visibility</li>
+            <li>Integrated with SAP; improved on-floor control</li>
+          </ul>
+        </article>
+        <article class="card h4">
+          <h3>Mobile Costing Approval App</h3>
+          <ul>
+            <li>Integrated with SAP for manager approvals</li>
+            <li>Increased transparency and decision speed</li>
+          </ul>
+        </article>
+        <article class="card h4">
+          <h3>Virtual Collaboration (V-Con)</h3>
+          <ul>
+            <li>Enabled cross-location productivity; reduced travel costs</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="card">
+        <div class="timeline">
+          <div class="t-item">
+            <strong>IT Director — PT. SAKA Teknologi Indonesia</strong> <span class="muted">(Aug 2017 – Present)</span>
+            <div class="muted">Consulting & delivery leadership: ERP, integration, mobile, architecture, project governance, budgets, client relationships.</div>
+          </div>
+          <div class="t-item">
+            <strong>Head of IT — PT. Honey Lady Intimates</strong> <span class="muted">(Mar 2012 – Jul 2017)</span>
+            <div class="muted">SAP AFS program lead: RFI/RFP, data center & infra, change mgmt, testing/cutover, SLAs, training, mobile/RFID initiatives.</div>
+          </div>
+          <div class="t-item">
+            <strong>IT Manager — PT. Norwest Industry</strong> <span class="muted">(Apr 2008 – Mar 2012)</span>
+            <div class="muted">SAP AFS implementation: planning with SAP India, GAP analysis, blueprint sign-off, integration testing & cutover prep.</div>
+          </div>
+          <div class="t-item">
+            <strong>Project Leader — Pearl Global Ltd.</strong> <span class="muted">(Feb 2005 – Sept 2006)</span>
+            <div class="muted">In‑house ERP dev: team leadership, testing standards, process re‑engineering, training, post‑go‑live support.</div>
+          </div>
+          <div class="t-item">
+            <strong>Team Lead / Sr. Software Engineer — New Age Data Links</strong> <span class="muted">(Aug 2000 – Feb 2005)</span>
+            <div class="muted">Requirements, design, development, QA, documentation, training, implementation.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <h2 class="section-title">Selected Achievements</h2>
+      <div class="grid">
+        <div class="card h8">
+          <ul>
+            <li>Delivered a <strong>$2M ERP transformation</strong> on time & within budget with executive recognition.</li>
+            <li>Consolidated three procurement offices → <strong>$10K+/month</strong> payroll savings & efficiency gains.</li>
+            <li>Maintained <strong>&lt;1% IT team turnover</strong> vs ~15% company average through culture & mentoring.</li>
+            <li>Improved inventory valuation accuracy at cutover, ensuring reliable P&amp;L.</li>
+          </ul>
+        </div>
+        <div class="card h4">
+          <h3>Certifications</h3>
+          <p class="muted">PMP (PMI), SAP SD, MCA, Diploma in Business Management, and more.</p>
+          <div class="tags">
+            <span class="badge">PMP</span>
+            <span class="badge">SAP SD</span>
+            <span class="badge">MCA</span>
+            <span class="badge">Business Mgmt</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:samir.sharma77@yahoo.com">samir.sharma77@yahoo.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/samirsharma77" target="_blank" rel="noopener">linkedin.com/in/samirsharma77</a></p>
+        <p>Company: <a href="https://pt-saka.com" target="_blank" rel="noopener">pt-saka.com</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Samir Sharma · Built with GitHub Pages</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
